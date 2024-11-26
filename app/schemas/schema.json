@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "event": {
+      "type": "string",
+      "enum": [
+        "ticket_created",
+        "ticket_updated"
+      ]
+    },
+    "details": {
+      "type": "object",
+      "oneOf": [
+        { "$ref": "#/$defs/detailsTicket"}
+      ]
+    }
+  },
+  "required": ["event", "details"],
+  "$defs": {
+    "detailsTicket": {
+      "type": "object",
+      "required": ["ticket", "buyer"],
+      "additionalProperties": false,
+      "properties": {
+        "ticket": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": ["online_presale", "ticket_proof", "self_ticket"]
+            },
+            "title": {
+              "type": "string"
+            },
+            "category": {
+              "type": "string"
+            },
+            "event": {
+              "type": "string"
+            },
+            "eventId": {
+              "type": "integer"
+            },
+            "cancellationReason": {
+              "type": "string",
+              "enum": [
+                "",
+                "undef_cancellation",
+                "order_mistake",
+                "event_cancellation",
+                "event_postponed",
+                "stolen",
+                "test_ticket",
+                "selfticket_mistake"
+              ]
+            },
+            "sessions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "time": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+                  },
+                  "doors": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "street": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "postcode": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "street",
+                      "city",
+                      "postcode"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "date",
+                  "time",
+                  "doors",
+                  "location"
+                ]
+              }
+            },
+            "promoter": {
+              "type": "string"
+            },
+            "price": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "string",
+                  "pattern": "^\\d+\\.\\d{2}$"
+                },
+                "currency": {
+                  "type": "string",
+                  "pattern": "^[A-Z]{3}$"
+                }
+              },
+              "required": [
+                "amount",
+                "currency"
+              ]
+            }
+          },
+          "required": [
+            "number",
+            "title",
+            "category",
+            "event",
+            "sessions",
+            "promoter",
+            "price"
+          ]
+        },
+        "buyer": {
+          "type": "object",
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "customer",
+                "self_ticket",
+                "point_of_sale",
+                "unknown"
+              ]
+            },
+            "firstName": {
+              "type": ["string", "null"]
+            },
+            "lastName": {
+              "type": ["string", "null"]
+            },
+            "email": {
+              "type": ["string", "null"]
+            },
+            "postcode": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "role",
+            "firstName",
+            "lastName"
+          ]
+        }
+      }
+    }
+  }
+}
