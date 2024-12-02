@@ -193,7 +193,7 @@ def webhook():
         socketio.emit('new_ticket', {
             'details': data['details'],
             'purchase_date': purchase_date_str
-        }, broadcast=True)
+        })
 
         response = handle_webhook(data)
         return jsonify(response)
