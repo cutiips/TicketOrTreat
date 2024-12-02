@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard Principal{% endblock %}
+
+{% block content %}
+    <h1 class="text-center mb-4">Résumé des Événements</h1>
+
+    <!-- Section des statistiques -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header"><i class="fas fa-ticket-alt"></i> Total des billets vendus</div>
+                <div class="card-body">
+                    <h5 class="card-title" id="total-tickets">{{ total_tickets }}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header"><i class="fas fa-dollar-sign"></i> Revenu total</div>
+                <div class="card-body">
+                    <h5 class="card-title" id="total-revenue">{{ total_revenue }} CHF</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header"><i class="fas fa-star"></i> Événement le plus vendu</div>
+                <div class="card-body">
+                    <h5 class="card-title" id="top-event">{{ top_event }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Graphiques et Activité -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h4 class="text-center">Répartition des billets par événement</h4>
+            <canvas id="eventChart"></canvas>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h4 class="text-center">Événements disponibles</h4>
+                    <ul id="event-list" class="list-group">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4 class="text-center">Derniers achats</h4>
+            <ul id="recent-tickets" class="list-group">
+                {% for ticket in tickets %}
+                    <li class="list-group-item">
+                        Ticket {{ ticket.details.ticket.number }} acheté par {{ ticket.details.buyer.firstName }}
+                        - <a href="/event/{{ ticket.details.ticket.title }}">{{ ticket.details.ticket.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <a href="{{ url_for('tickets') }}" class="btn btn-primary btn-block mt-2">Voir tous les billets</a>
+        </div>
+    </div>
+
+    <!-- Section pour les notifications -->
+    <div aria-live="polite" aria-atomic="true" style="position: fixed; top: 20px; right: 20px; z-index: 9999;">
+        <div id="toast-container"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const socket = io();
+
+        // Màj sections en temps réel lors d'un nouvel insert
+        socket.on("new_ticket", function (ticket) {
+            const details = ticket.details;
+
+            // ajouter derniers achats
+            const recentTickets = document.getElementById("recent-tickets");
+            const listItem = document.createElement("li");
+            listItem.className = "list-group-item";
+            listItem.innerHTML = `
+            Ticket ${details.ticket.number} acheté par ${details.buyer.firstName}
+            - <a href="/event/${details.ticket.title}">${details.ticket.title}</a>
+        `;
+            recentTickets.prepend(listItem);
+
+            // màj graphique des événements
+            const eventIndex = eventChart.data.labels.indexOf(details.ticket.title);
+            if (eventIndex !== -1) {
+                eventChart.data.datasets[0].data[eventIndex] += 1;
+            } else {
+                eventChart.data.labels.push(details.ticket.title);
+                eventChart.data.datasets[0].data.push(1);
+            }
+            eventChart.update();
+
+            // màj stats globales
+            const totalTicketsElement = document.getElementById("total-tickets");
+            let totalTickets = parseInt(totalTicketsElement.innerText);
+            totalTickets += 1;
+            totalTicketsElement.innerText = totalTickets;
+
+            const totalRevenueElement = document.getElementById("total-revenue");
+            let totalRevenue = parseFloat(totalRevenueElement.innerText);
+            totalRevenue += parseFloat(details.ticket.price.amount);
+            totalRevenueElement.innerText = totalRevenue.toFixed(2) + ' CHF';
+
+            // display la notification
+            const toastContainer = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.setAttribute('role', 'alert');
+            toast.setAttribute('aria-live', 'assertive');
+            toast.setAttribute('aria-atomic', 'true');
+            toast.setAttribute('data-delay', '5000');
+            toast.innerHTML = `
+            <div class="toast-header">
+                <strong class="mr-auto">Nouveau Billet Vendu</strong>
+                <small>Maintenant</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fermer">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                ${details.buyer.firstName} ${details.buyer.lastName} a acheté un billet pour ${details.ticket.title}.
+            </div>
+        `;
+            toastContainer.appendChild(toast);
+            $(toast).toast('show');
+        });
+
+        // graph des événements
+        const ctx = document.getElementById('eventChart').getContext('2d');
+        const eventChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: [], // Événements
+                datasets: [{
+                    data: [], // Nombre de billets
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF'],
+                }]
+            },
+            options: {
+                responsive: true,
+                onClick: (event, elements) => {
+                    if (elements.length > 0) {
+                        const index = elements[0].index;
+                        const eventTitle = eventChart.data.labels[index];
+                        window.location.href = `/event/${eventTitle}`;
+                    }
+                }
+            }
+        });
+
+        // données du graph
+        fetch('/api/event-data')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(event => {
+                    eventChart.data.labels.push(event._id);
+                    eventChart.data.datasets[0].data.push(event.total_tickets);
+                });
+                eventChart.update();
+            });
+
+        // load événements dispo
+        fetch('/api/event-data')
+            .then(response => response.json())
+            .then(data => {
+                const eventList = document.getElementById('event-list');
+                data.forEach(event => {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'list-group-item';
+                    listItem.innerHTML = `<a href="/event/${event._id}">${event._id}</a> - ${event.total_tickets} billets vendus`;
+                    eventList.appendChild(listItem);
+                });
+            });
+    </script>
+{% endblock %}

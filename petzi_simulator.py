@@ -83,15 +83,15 @@ if __name__ == "__main__":
               "ticket":{
                  "number":"XXXX2941J6SABA",
                  "type":"online_presale",
-                 "title":"Test To Delete",
+                 "title":"Event 2",
                  "category":"Prélocation",
                  "eventId":54694,
-                 "event":"Test To Delete",
+                 "event":"Event 1",
                  "cancellationReason":"",
-                 "generatedAt": "2024-09-04T10:21:21.925529+00:00",
+                 "generatedAt": "2024-07-04T10:21:21.925529+00:00",
                  "sessions":[
                     {
-                       "name":"Test To Delete",
+                       "name":"Event 1",
                        "date":"2024-01-27",
                        "time":"21:00:00",
                        "doors":"21:00:00",
@@ -111,8 +111,8 @@ if __name__ == "__main__":
               },
               "buyer":{
                  "role":"customer",
-                 "firstName":"Jane",
-                 "lastName":"Doe",
+                 "firstName":"Ryu guez",
+                 "lastName":"heheheh",
                  "postcode":"1234"
               }
            }
