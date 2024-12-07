@@ -1,48 +1,183 @@
+/* Variables globales */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #3498DB;
+    --success-color: #27AE60;
+    --info-color: #2980B9;
+    --warning-color: #F1C40F;
+    --text-color: #2C3E50;
+    --background-color: #F5F6FA;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles généraux */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-h1, h2, h3, h4 {
-    color: #2c3e50;
-    font-weight: 700;
-    margin-top: 20px;
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
 }
 
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Cards */
 .card {
-    margin-bottom: 20px;
-    transition: transform 0.2s;
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
 }
 
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Statistiques cards */
+.bg-success {
+    background: linear-gradient(135deg, #27AE60, #2ECC71) !important;
+}
+
+.bg-info {
+    background: linear-gradient(135deg, #2980B9, #3498DB) !important;
+}
+
+.bg-warning {
+    background: linear-gradient(135deg, #F1C40F, #F39C12) !important;
+}
+
+/* Tableaux */
 .table {
-    background-color: #ffffff;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
 }
 
-.btn {
-    transition: background-color 0.3s ease, color 0.3s ease;
+.table thead th {
+    border-top: none;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-.btn:hover {
-    background-color: #fff !important;
-    color: #007bff !important;
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
+/* Liste des événements */
+.list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.list-group-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Graphiques */
+canvas {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Notifications Toast */
 .toast {
-    opacity: 0.9;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
 }
 
 .toast-header {
-    font-weight: bold;
-}
-
-.toast-header.bg-success {
-    background-color: #28a745;
+    border-radius: 12px 12px 0 0;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .toast-header .close {
-    color: #fff;
+    color: white;
+}
+
+/* Boutons */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    background-color: white !important;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .table-responsive {
+        border-radius: 12px;
+        box-shadow: var(--card-shadow);
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .table, canvas {
+    animation: fadeIn 0.5s ease-out;
 }
