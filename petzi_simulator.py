@@ -1,10 +1,14 @@
 import argparse
 import datetime
 import hmac
+import os
+
 import requests
 import random
 import string
 import json
+
+from dotenv import load_dotenv
 
 
 def generate_random_string(length=12):
@@ -63,11 +67,15 @@ def introduce_invalidity(data_dict, invalid_type):
 
 
 if __name__ == "__main__":
+    load_dotenv()
+
+    WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET")
+
     # Crée un parser pour les arguments de ligne de commande
     parser = argparse.ArgumentParser(description="HTTP POST Request with JSON Body")
     parser.add_argument("url", type=str, help="URL to send the POST request to")
     parser.add_argument("secret", nargs='?', type=str, help="Secret shared between your server and the simulator",
-                        default="AEeyJhbGciOiJIUzUxMiIsImlzcyI6")
+                        default=WEBHOOK_SECRET)
     parser.add_argument("--invalid_type", type=str,
                         choices=["missing_field", "wrong_type", "invalid_enum"],
                         help="Type of invalidity to introduce", default=None)
