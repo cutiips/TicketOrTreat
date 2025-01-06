@@ -75,50 +75,54 @@ if __name__ == "__main__":
     # Parse les arguments
     args = parser.parse_args()
 
-    # JSON valide par défaut
-    data = '''
-    {
-           "event":"ticket_created",
-           "details":{
-              "ticket":{
-                 "number":"XXXX2941J6SABA",
-                 "type":"online_presale",
-                 "title":"Event 2",
-                 "category":"Prélocation",
-                 "eventId":54694,
-                 "event":"Event 1",
-                 "cancellationReason":"",
-                 "generatedAt": "2024-07-04T10:21:21.925529+00:00",
-                 "sessions":[
+    # random name / last name
+    first_names = ('John', 'Andy', 'Joe', 'Bob', 'Bill', 'Tom', 'Jack', 'Denny', 'Kate', 'Emma')
+    last_names = ('Johnson', 'Smith', 'Williams', 'Jones', 'Brown', 'Davis', 'Miller', 'Wilson', 'Moore', 'Taylor')
+
+    random_first_name = random.choice(first_names)
+    random_last_name = random.choice(last_names)
+
+    # JSON valide par défaut sous forme de dictionnaire
+    data_dict = {
+        "event": "ticket_created",
+        "details": {
+            "ticket": {
+                "number": "XXXX2941J6SABA",
+                "type": "online_sale",
+                "title": "Event Demo CAC",
+                "category": "Prélocation",
+                "eventId": 54694,
+                "event": "Event Demo",
+                "cancellationReason": "",
+                "generatedAt": "2025-07-04T10:21:21.925529+00:00",
+                "sessions": [
                     {
-                       "name":"Event 1",
-                       "date":"2024-01-27",
-                       "time":"21:00:00",
-                       "doors":"21:00:00",
-                       "location":{
-                          "name":"Case à Chocs",
-                          "street":"Quai Philipe Godet 20",
-                          "city":"Neuchatel",
-                          "postcode":"2000"
-                       }
+                        "name": "Event Demo CAC",
+                        "date": "2025-02-01",
+                        "time": "21:00:00",
+                        "doors": "21:00:00",
+                        "location": {
+                            "name": "Case à Chocs",
+                            "street": "Quai Philipe Godet 20",
+                            "city": "Neuchatel",
+                            "postcode": "2000"
+                        }
                     }
-                 ],
-                 "promoter":"Case à Chocs",
-                 "price":{
-                    "amount":"34.00",
-                    "currency":"CHF"
-                 }
-              },
-              "buyer":{
-                 "role":"customer",
-                 "firstName":"Ryu guez",
-                 "lastName":"heheheh",
-                 "postcode":"1234"
-              }
-           }
-        }
-    '''
-    data_dict = json.loads(data)
+                ],
+                "promoter": "Case à Chocs",
+                "price": {
+                    "amount": "30.00",
+                    "currency": "CHF"
+                }
+            },
+            "buyer": {
+                "role": "customer",
+                "firstName": random_first_name,
+                "lastName": random_last_name,
+                "postcode": "1234"
+            }
+        },
+    }
 
     # Génère un numéro aléatoire pour 'number'
     data_dict["details"]["ticket"]["number"] = generate_random_string()
