@@ -1,0 +1,4600 @@
+[{
+  "_id": {
+    "$oid": "678ac33d7312cc420d8f828f"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "EP9S2IQIF7CC",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Joe",
+      "lastName": "Jones",
+      "email": "joe.jones@example.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T12:54:45.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac33f7312cc420d8f8290"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "3T6Z7097TIBO",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "email": "bob.johnson@test.org",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T11:18:09.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3417312cc420d8f8291"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "6IWNEBZDVSAZ",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Kate",
+      "lastName": "Brown",
+      "email": "kate.brown@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T08:31:05.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3437312cc420d8f8292"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "5C9KY9OXH9LN",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Johnson",
+      "email": "bill.johnson@test.org",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T17:00:04.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3467312cc420d8f8293"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "QMQR7MGEF9RI",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "email": "bob.brown@test.org",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T23:18:34.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3487312cc420d8f8294"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "O5R9NAE9YTEW",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "email": "bob.brown@email.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T12:20:05.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac34a7312cc420d8f8295"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "AT8BSIMP79VA",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Wilson",
+      "email": "andy.wilson@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T13:52:36.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac34c7312cc420d8f8296"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "H5ZE98KK1Y5S",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Brown",
+      "email": "john.brown@email.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T13:18:30.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac34e7312cc420d8f8297"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "3ZCEYSJVEFZB",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Williams",
+      "email": "denny.williams@example.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T08:07:55.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3517312cc420d8f8298"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "WOLI4POUPX9F",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Kate",
+      "lastName": "Jones",
+      "email": "kate.jones@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T18:45:11.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3537312cc420d8f8299"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "GPNODDJFPYU6",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Williams",
+      "email": "jack.williams@example.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T18:04:47.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3557312cc420d8f829a"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "OVSUBPPDPE60",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Wilson",
+      "email": "andy.wilson@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T05:03:12.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3577312cc420d8f829b"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "U8RSMGP0BCTI",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Davis",
+      "email": "denny.davis@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T04:13:12.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3597312cc420d8f829c"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "4E5KOFEJP8GN",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Davis",
+      "email": "andy.davis@example.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T02:54:36.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac35c7312cc420d8f829d"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "I87ZLPYK9SQB",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Moore",
+      "email": "tom.moore@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T07:29:40.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac35e7312cc420d8f829e"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "YRACGJPF55H1",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Moore",
+      "email": "jack.moore@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T18:46:53.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3607312cc420d8f829f"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "ES0MUNYS261E",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Miller",
+      "email": "jack.miller@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T18:45:39.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3627312cc420d8f82a0"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "6YJ6OH5PDU3B",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Kate",
+      "lastName": "Smith",
+      "email": "kate.smith@email.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T15:56:40.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3657312cc420d8f82a1"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "MR7PBE5CJL4P",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Jones",
+      "email": "emma.jones@example.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T19:25:37.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3677312cc420d8f82a2"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "J42DA4GRMFG2",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Wilson",
+      "email": "emma.wilson@email.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T07:06:53.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3697312cc420d8f82a3"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "JBQNWW3UIPTF",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Wilson",
+      "email": "john.wilson@example.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T03:05:48.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac36b7312cc420d8f82a4"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "KTWT417WOMOU",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Taylor",
+      "email": "bill.taylor@email.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T13:21:47.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac36d7312cc420d8f82a5"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "WV26TLJ7O089",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Joe",
+      "lastName": "Smith",
+      "email": "joe.smith@email.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T06:08:22.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3707312cc420d8f82a6"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "T21CGFAVIRGH",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Miller",
+      "email": "tom.miller@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T11:06:25.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3727312cc420d8f82a7"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "KA0LVRM6IOP8",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Moore",
+      "email": "bill.moore@email.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T20:57:34.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3747312cc420d8f82a8"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "TQE9LY6XP7DL",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Smith",
+      "email": "bill.smith@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T14:44:09.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3767312cc420d8f82a9"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "PZQT09YU9D50",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Miller",
+      "email": "emma.miller@test.org",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T01:14:03.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3787312cc420d8f82aa"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "PD4WS5MBSF54",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Williams",
+      "email": "john.williams@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T14:09:11.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac37b7312cc420d8f82ab"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "4Y196KGIMHB5",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Kate",
+      "lastName": "Williams",
+      "email": "kate.williams@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T09:47:51.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac37d7312cc420d8f82ac"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "61M9QKWCYOAF",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Johnson",
+      "email": "bill.johnson@example.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T08:55:10.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac37f7312cc420d8f82ad"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "TAPSOFZP4DDS",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Miller",
+      "email": "john.miller@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T08:45:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3817312cc420d8f82ae"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "XD3EXGHWS3AX",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Miller",
+      "email": "andy.miller@example.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T02:54:29.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3837312cc420d8f82af"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "A88A3GP2D7Y9",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Moore",
+      "email": "denny.moore@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T14:27:31.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3867312cc420d8f82b0"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RDZ3K925O2U6",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Wilson",
+      "email": "emma.wilson@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T05:42:46.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3887312cc420d8f82b1"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "PXGIRVVO760N",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Moore",
+      "email": "tom.moore@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T06:27:29.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac38a7312cc420d8f82b2"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "0CIL6U2X3Q35",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Moore",
+      "email": "denny.moore@example.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T22:55:02.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac38c7312cc420d8f82b3"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "ISBSM6D5TCEP",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Smith",
+      "email": "tom.smith@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T18:37:39.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac38e7312cc420d8f82b4"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "IUIRPP4L2Q36",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Brown",
+      "email": "john.brown@example.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T08:12:08.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3917312cc420d8f82b5"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "ZNE3UN3GCS9T",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Miller",
+      "email": "tom.miller@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T01:05:42.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3937312cc420d8f82b6"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "MPFLMAZFNLJN",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Jones",
+      "email": "bill.jones@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T23:43:30.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3957312cc420d8f82b7"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "LKWA9EW88FMT",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Miller",
+      "email": "jack.miller@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T16:32:05.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3977312cc420d8f82b8"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "PZY4NBWHXQM2",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Jones",
+      "email": "andy.jones@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T07:51:34.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3997312cc420d8f82b9"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "K4BADTHEBH3C",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Moore",
+      "email": "emma.moore@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T05:32:34.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac39c7312cc420d8f82ba"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RSB9TJSPH1CA",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Smith",
+      "email": "bill.smith@example.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T16:27:57.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac39e7312cc420d8f82bb"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "1V9B54HHHJFL",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Wilson",
+      "email": "bob.wilson@email.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T17:36:13.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3a07312cc420d8f82bc"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "Z7A3B7EYS6UI",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Miller",
+      "email": "bill.miller@test.org",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T21:10:33.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3a27312cc420d8f82bd"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "59YRS49DPHBS",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Johnson",
+      "email": "jack.johnson@email.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T09:46:24.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3a57312cc420d8f82be"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "XWJC1T2NHAFZ",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "email": "bob.smith@email.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T12:04:27.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3a77312cc420d8f82bf"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "H27U5O19EP1Y",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Jones",
+      "email": "bill.jones@test.org",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T00:27:29.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3a97312cc420d8f82c0"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "L3B7C0JLO6VP",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Joe",
+      "lastName": "Moore",
+      "email": "joe.moore@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T11:44:59.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3ab7312cc420d8f82c1"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "WLJ3YSGUM3F4",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Wilson",
+      "email": "andy.wilson@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T03:34:17.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3ad7312cc420d8f82c2"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "LYCTT2JZAIJX",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Smith",
+      "email": "bill.smith@email.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T01:35:48.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3b07312cc420d8f82c3"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "V3V7F6EPL2KM",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Jones",
+      "email": "bob.jones@test.org",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T16:03:58.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3b27312cc420d8f82c4"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "I3AL0ZI6AK95",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Miller",
+      "email": "emma.miller@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T05:15:52.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3b47312cc420d8f82c5"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "DBOQAS6QFTA8",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Jones",
+      "email": "emma.jones@email.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T17:53:26.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3b67312cc420d8f82c6"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "VQHBZET8VL1C",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Brown",
+      "email": "jack.brown@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T12:46:48.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3b87312cc420d8f82c7"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "JI8U607JFJZO",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Taylor",
+      "email": "jack.taylor@test.org",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T19:06:53.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3bb7312cc420d8f82c8"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "IGXAN1RRSL9P",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Johnson",
+      "email": "emma.johnson@email.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T22:51:31.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3bd7312cc420d8f82c9"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "OGI0NCEU4YR1",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "email": "bob.brown@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T20:24:40.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3bf7312cc420d8f82ca"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "BDRYJ8WBW713",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Miller",
+      "email": "andy.miller@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T12:42:19.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3c17312cc420d8f82cb"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "HFKOIXTJWDLQ",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Davis",
+      "email": "john.davis@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T02:35:33.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3c47312cc420d8f82cc"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "J79X2JF5JPDT",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Williams",
+      "email": "bob.williams@email.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T16:18:20.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3c67312cc420d8f82cd"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "AP4A74HQY0E9",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Davis",
+      "email": "andy.davis@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T12:33:04.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3c87312cc420d8f82ce"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "D496QPHK1YS6",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Wilson",
+      "email": "jack.wilson@test.org",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T19:32:09.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3ca7312cc420d8f82cf"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "ABT8F6FHRJW8",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Moore",
+      "email": "emma.moore@example.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T15:31:11.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3cc7312cc420d8f82d0"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "B7XLXJPV8BZ3",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Miller",
+      "email": "bob.miller@email.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T06:01:54.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3cf7312cc420d8f82d1"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "1TCCL2PDR1GO",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Johnson",
+      "email": "denny.johnson@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T01:55:47.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3d17312cc420d8f82d2"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "2J0DWM8QDCSY",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Wilson",
+      "email": "john.wilson@example.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T06:12:40.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3d37312cc420d8f82d3"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "NGDGFXQ3VQN6",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Kate",
+      "lastName": "Miller",
+      "email": "kate.miller@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T14:09:17.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3d57312cc420d8f82d4"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "7HH71V9J4Y93",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Moore",
+      "email": "bill.moore@email.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T23:10:02.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3d77312cc420d8f82d5"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RDS22NJLHJTY",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Wilson",
+      "email": "jack.wilson@example.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T09:25:52.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3da7312cc420d8f82d6"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RQBSVFI1HT03",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Taylor",
+      "email": "tom.taylor@email.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T13:21:46.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3dc7312cc420d8f82d7"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "QOP64BVZ9SEM",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Smith",
+      "email": "denny.smith@email.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T21:41:42.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3de7312cc420d8f82d8"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "D9FUGDVYBBJ7",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Taylor",
+      "email": "andy.taylor@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T02:01:08.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3e07312cc420d8f82d9"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "WYACKXTBHL39",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Joe",
+      "lastName": "Johnson",
+      "email": "joe.johnson@example.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T15:45:09.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3e27312cc420d8f82da"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "FACFHI8UL3JY",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Davis",
+      "email": "jack.davis@test.org",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T21:02:14.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3e57312cc420d8f82db"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "B79271UNW1A0",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "email": "bob.johnson@email.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T23:19:23.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3e77312cc420d8f82dc"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "EL5U9RUHMGTA",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Davis",
+      "email": "denny.davis@test.org",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T17:41:29.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3e97312cc420d8f82dd"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "58QD8NMC9EIH",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Taylor",
+      "email": "bob.taylor@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T00:03:50.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3eb7312cc420d8f82de"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "5Z3TWS5CSWIT",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Moore",
+      "email": "tom.moore@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T07:25:35.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3ed7312cc420d8f82df"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RJ8IE6O7L7X0",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Davis",
+      "email": "bob.davis@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T09:30:42.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3f07312cc420d8f82e0"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RLENVRFLJ0RL",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "selfticket_mistake",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Brown",
+      "email": "bill.brown@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T18:43:31.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3f27312cc420d8f82e1"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "Y2WDMSE7VOQ9",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Wilson",
+      "email": "bill.wilson@test.org",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T18:09:13.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3f47312cc420d8f82e2"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RO3JHL17R9NT",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Moore",
+      "email": "andy.moore@email.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T06:53:55.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3f67312cc420d8f82e3"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "WYJBR884E9H2",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Davis",
+      "email": "bob.davis@email.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T18:43:51.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3f87312cc420d8f82e4"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "F3R7KCIJJLWD",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Emma",
+      "lastName": "Davis",
+      "email": "emma.davis@test.org",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T19:32:48.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3fb7312cc420d8f82e5"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "RICUNVUJ20LQ",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Johnson",
+      "email": "andy.johnson@example.com",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T10:26:36.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3fd7312cc420d8f82e6"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "FO24H4VPFA3T",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Davis",
+      "email": "john.davis@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T18:24:42.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac3ff7312cc420d8f82e7"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "BI01KC4GTEL0",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "event_postponed",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Davis",
+      "email": "jack.davis@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T07:52:26.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4017312cc420d8f82e8"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "B5WHGDVK2NS9",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Brown",
+      "email": "jack.brown@test.org",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T03:56:51.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4047312cc420d8f82e9"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "DLMS0B0H7SUL",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Taylor",
+      "email": "bill.taylor@test.org",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T04:43:59.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4067312cc420d8f82ea"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "AEF0XEVDSBH9",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "VIP",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "event_cancellation",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Jura",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "50.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bill",
+      "lastName": "Smith",
+      "email": "bill.smith@test.org",
+      "postcode": "2800"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T17:09:56.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4087312cc420d8f82eb"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "O2MM9JZFEMS5",
+      "type": "online_presale",
+      "title": "KPOP RYU",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "KPOP RYU",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "KPOP RYU",
+          "date": "2025-02-02",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Tom",
+      "lastName": "Williams",
+      "email": "tom.williams@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T19:30:26.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac40a7312cc420d8f82ec"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "03RTIBBZ0LCJ",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Prélocation",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "test_ticket",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Fribourg",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "25.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Jack",
+      "lastName": "Taylor",
+      "email": "jack.taylor@example.com",
+      "postcode": "1700"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T09:06:28.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac40c7312cc420d8f82ed"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "GKHHDXP7UDY5",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "undef_cancellation",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Smith",
+      "email": "andy.smith@test.org",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T16:14:08.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac40f7312cc420d8f82ee"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "125UDG6ME4TU",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "email": "bob.brown@email.com",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-02T19:54:34.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4117312cc420d8f82ef"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "8H8JIMC8S49J",
+      "type": "online_presale",
+      "title": "THEODORA",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "THEODORA",
+      "cancellationReason": "",
+      "sessions": [
+        {
+          "name": "THEODORA",
+          "date": "2025-05-05",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Genève",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "John",
+      "lastName": "Davis",
+      "email": "john.davis@email.com",
+      "postcode": "1200"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-01T04:39:50.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4137312cc420d8f82f0"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "0K6CNOWBSW0Y",
+      "type": "online_presale",
+      "title": "TECH WITH US",
+      "category": "Standard",
+      "eventId": 17,
+      "event": "TECH WITH US",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TECH WITH US",
+          "date": "2025-01-01",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "30.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Denny",
+      "lastName": "Johnson",
+      "email": "denny.johnson@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T10:36:57.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4157312cc420d8f82f1"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "618V5FLNHLCD",
+      "type": "online_presale",
+      "title": "TOOLBOX NEUCHÂTEL",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "TOOLBOX NEUCHÂTEL",
+      "cancellationReason": "order_mistake",
+      "sessions": [
+        {
+          "name": "TOOLBOX NEUCHÂTEL",
+          "date": "2025-04-04",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Lausanne",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Andy",
+      "lastName": "Taylor",
+      "email": "andy.taylor@test.org",
+      "postcode": "1000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T10:41:40.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678ac4177312cc420d8f82f2"
+  },
+  "event": "ticket_created",
+  "details": {
+    "ticket": {
+      "number": "3PEQNDRJRBBT",
+      "type": "online_presale",
+      "title": "VALENTINO VIVACE",
+      "category": "Étudiant",
+      "eventId": 17,
+      "event": "VALENTINO VIVACE",
+      "cancellationReason": "stolen",
+      "sessions": [
+        {
+          "name": "VALENTINO VIVACE",
+          "date": "2025-03-03",
+          "time": "21:00:00",
+          "doors": "21:00:00",
+          "location": {
+            "name": "Case à Chocs",
+            "street": "Quai Philipe Godet 20",
+            "city": "Neuchâtel",
+            "postcode": "2000"
+          }
+        }
+      ],
+      "promoter": "Case à Chocs",
+      "price": {
+        "amount": "20.00",
+        "currency": "CHF"
+      }
+    },
+    "buyer": {
+      "role": "customer",
+      "firstName": "Bob",
+      "lastName": "Miller",
+      "email": "bob.miller@example.com",
+      "postcode": "2000"
+    }
+  },
+  "purchase_date": {
+    "$date": "2025-02-03T19:39:54.000Z"
+  }
+}]
