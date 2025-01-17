@@ -1,5 +1,6 @@
 import random
 
+import jsonschema
 from flask import Flask, request, jsonify, render_template
 import hmac
 import hashlib
@@ -186,8 +187,14 @@ def webhook():
     # Étape 2 : Valider et traiter le payload
     try:
         data = request.get_json()
+
+        jsonschema.validate(instance=data, schema=webhook_schema)
+
         # data['purchase_date'] = datetime.utcnow() # now
-        data['purchase_date'] = datetime(2025, 2, random.randint(1, 3), random.randint(0, 23), random.randint(0, 59), random.randint(0, 59)) # random date
+        data['purchase_date'] = datetime(
+            2025, 2, random.randint(1, 3),
+            random.randint(0, 23), random.randint(0, 59),
+            random.randint(0, 59)) # random date
         purchase_date_str = data['purchase_date'].strftime('%Y-%m-%d %H:%M:%S')
 
         save_event(data)
@@ -202,7 +209,10 @@ def webhook():
         return jsonify(response)
 
     except ValidationError as e:
-        return jsonify({"error": f"JSON Validation Error: {e.message}"}), 400
+        return jsonify({
+            "error": f"JSON Validation Error: {e.message}",
+            "path": list(e.absolute_path)
+        }), 400
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 

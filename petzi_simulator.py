@@ -3,13 +3,13 @@ import datetime
 import hmac
 import os
 
+import jsonschema
 import requests
 import random
 import string
 import json
 
 from dotenv import load_dotenv
-
 
 def generate_random_string(length=12):
     """
@@ -18,12 +18,11 @@ def generate_random_string(length=12):
     letters_and_digits = string.ascii_letters + string.digits
     return ''.join(random.choice(letters_and_digits) for i in range(length))
 
-
 def make_header(body, secret):
     """
     Crée les en-têtes nécessaires pour signer la requête.
     """
-    unix_timestamp = str(datetime.datetime.timestamp(datetime.datetime.now())).split('.')[0]
+    unix_timestamp = str(int(datetime.datetime.now().timestamp()))
     body_to_sign = f'{unix_timestamp}.{body}'.encode()
     digest = hmac.new(secret.encode(), body_to_sign, "sha256").hexdigest()
     headers = {
@@ -33,7 +32,6 @@ def make_header(body, secret):
         'User-Agent': 'PETZI webhook'
     }
     return headers
-
 
 def make_post_request(url, data, secret):
     """
@@ -49,7 +47,6 @@ def make_post_request(url, data, secret):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-
 def introduce_invalidity(data_dict, invalid_type):
     """
     Introduit des erreurs dans le JSON pour tester la validation.
@@ -64,7 +61,6 @@ def introduce_invalidity(data_dict, invalid_type):
         # Donne une valeur non autorisée dans un champ à énumération
         data_dict["details"]["ticket"]["type"] = "invalid_type"
     return data_dict
-
 
 if __name__ == "__main__":
     load_dotenv()
@@ -96,13 +92,13 @@ if __name__ == "__main__":
         "details": {
             "ticket": {
                 "number": "XXXX2941J6SABA",
-                "type": "online_sale",
+                "type": "online_presale",
                 "title": "Event Demo CAC",
                 "category": "Prélocation",
                 "eventId": 54694,
                 "event": "Event Demo",
                 "cancellationReason": "",
-                "generatedAt": "2025-07-04T10:21:21.925529+00:00",
+                "generatedAt": datetime.datetime.utcnow().isoformat() + "Z",  # ISO 8601
                 "sessions": [
                     {
                         "name": "Event Demo CAC",
@@ -138,6 +134,26 @@ if __name__ == "__main__":
     # Introduire une invalidité si spécifié
     if args.invalid_type:
         data_dict = introduce_invalidity(data_dict, args.invalid_type)
+
+    # Charger le schéma depuis schema.json pour validation
+    try:
+        with open('schema.json', 'r') as schema_file:
+            schema = json.load(schema_file)
+    except FileNotFoundError:
+        print("Le fichier 'schema.json' n'a pas été trouvé.")
+        exit(1)
+    except json.JSONDecodeError as e:
+        print(f"Erreur lors du chargement du schéma JSON : {e}")
+        exit(1)
+
+    # Valider data_dict contre le schéma
+    try:
+        jsonschema.validate(instance=data_dict, schema=schema)
+        print("Le JSON généré est valide selon le schéma.")
+    except jsonschema.exceptions.ValidationError as err:
+        print("Le JSON généré est invalide :", err.message)
+        print("Chemin de l'erreur :", list(err.absolute_path))
+        exit(1)
 
     # Convertit le dictionnaire en JSON formaté
     data = json.dumps(data_dict, indent=4)
