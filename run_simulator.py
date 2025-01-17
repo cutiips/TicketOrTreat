@@ -1,7 +1,7 @@
 import subprocess
 
 # Chemin vers Python dans l'environnement virtuel
-python_path = r"C:\Users\Curty\Programmation\$ HEG_urbanisation\TicketOrTreat\venv310\Scripts\python.exe"
+python_path = "venv310/Scripts/python.exe"
 
 # Définir les paramètres de la commande
 url = "http://localhost:5000/webhook"
