@@ -15,8 +15,16 @@ def generate_random_string(length=12):
     """
     Génère une chaîne aléatoire pour le champ 'number'.
     """
-    letters_and_digits = string.ascii_letters + string.digits
+    letters_and_digits = string.ascii_uppercase + string.digits
     return ''.join(random.choice(letters_and_digits) for i in range(length))
+
+def generate_random_email(first_name, last_name):
+    """
+    Génère une adresse e-mail aléatoire pour le 'buyer'.
+    """
+    domains = ['example.com', 'email.com', 'test.org']
+    domain = random.choice(domains)
+    return f"{first_name.lower()}.{last_name.lower()}@{domain}"
 
 def make_header(body, secret):
     """
@@ -85,20 +93,49 @@ if __name__ == "__main__":
 
     random_first_name = random.choice(first_names)
     random_last_name = random.choice(last_names)
+    email = generate_random_email(random_first_name, random_last_name)
+
+    # Random category and price
+    categories = ["Prélocation", "VIP", "Standard", "Étudiant"]
+    random_category = random.choice(categories)
+
+    price_mapping = {
+        "VIP": "50.00",
+        "Standard": "30.00",
+        "Étudiant": "20.00",
+        "Prélocation": "25.00"
+    }
+    amount = price_mapping.get(random_category, "30.00")
+
+    # Random cancellation reason
+    cancellation_reasons = [
+        "",
+        "undef_cancellation",
+        "order_mistake",
+        "event_cancellation",
+        "event_postponed",
+        "stolen",
+        "test_ticket",
+        "selfticket_mistake"
+    ]
+    random_cancellation_reason = random.choice(cancellation_reasons)
+
+    # Random postcode for buyer
+    postcodes = ["1000", "2000", "3000", "4000", "5000"]
+    random_postcode = random.choice(postcodes)
 
     # JSON valide par défaut sous forme de dictionnaire
     data_dict = {
         "event": "ticket_created",
         "details": {
             "ticket": {
-                "number": "XXXX2941J6SABA",
+                "number": generate_random_string(),
                 "type": "online_presale",
                 "title": "Event Demo CAC",
-                "category": "Prélocation",
+                "category": random_category,
                 "eventId": 54694,
                 "event": "Event Demo",
-                "cancellationReason": "",
-                "generatedAt": datetime.datetime.utcnow().isoformat() + "Z",  # ISO 8601
+                "cancellationReason": random_cancellation_reason,
                 "sessions": [
                     {
                         "name": "Event Demo CAC",
@@ -115,7 +152,7 @@ if __name__ == "__main__":
                 ],
                 "promoter": "Case à Chocs",
                 "price": {
-                    "amount": "30.00",
+                    "amount": amount,
                     "currency": "CHF"
                 }
             },
@@ -123,13 +160,11 @@ if __name__ == "__main__":
                 "role": "customer",
                 "firstName": random_first_name,
                 "lastName": random_last_name,
-                "postcode": "1234"
+                "email": email,
+                "postcode": random_postcode
             }
         },
     }
-
-    # Génère un numéro aléatoire pour 'number'
-    data_dict["details"]["ticket"]["number"] = generate_random_string()
 
     # Introduire une invalidité si spécifié
     if args.invalid_type:
