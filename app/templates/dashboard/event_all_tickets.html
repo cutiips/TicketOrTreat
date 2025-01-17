@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}Tous les billets - {{ event_title }}{% endblock %}
+
+{% block content %}
+<h1 class="text-center mb-4">Tous les billets pour {{ event_title }}</h1>
+
+<!-- Formulaire de filtre -->
+<form method="GET" class="form-inline mb-3">
+    <div class="form-group mx-2">
+        <label for="city">Ville : </label>
+        <select name="city" id="city" class="form-control ml-2">
+            <option value="">--Toutes--</option>
+            {% for c in distinct_cities %}
+            <option value="{{ c }}" {% if c == selected_city %}selected{% endif %}>{{ c }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="form-group mx-2">
+        <label for="type">Type : </label>
+        <select name="type" id="type" class="form-control ml-2">
+            <option value="">--Tous--</option>
+            {% for t in distinct_types %}
+            <option value="{{ t }}" {% if t == selected_type %}selected{% endif %}>{{ t }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="form-group mx-2">
+        <label for="sort">Tri : </label>
+        <select name="sort" id="sort" class="form-control ml-2">
+            <option value="date_desc" {% if selected_sort == 'date_desc' %}selected{% endif %}>Date (plus récent)</option>
+            <option value="date_asc" {% if selected_sort == 'date_asc' %}selected{% endif %}>Date (plus ancien)</option>
+            <option value="price_asc" {% if selected_sort == 'price_asc' %}selected{% endif %}>Prix (croissant)</option>
+            <option value="price_desc" {% if selected_sort == 'price_desc' %}selected{% endif %}>Prix (décroissant)</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-secondary ml-2">Filtrer</button>
+</form>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th>Numéro</th>
+            <th>Type</th>
+            <th>Catégorie</th>
+            <th>Prix</th>
+            <th>Acheteur</th>
+            <th>Email</th>
+            <th>Ville</th>
+            <th>Raison annulation</th>
+            <th>Date d'achat</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for ticket in tickets %}
+            <tr>
+                <td>{{ ticket.details.ticket.number }}</td>
+                <td>{{ ticket.details.ticket.type }}</td>
+                <td>{{ ticket.details.ticket.category }}</td>
+                <td>{{ ticket.details.ticket.price.amount }} {{ ticket.details.ticket.price.currency }}</td>
+                <td>{{ ticket.details.buyer.firstName }} {{ ticket.details.buyer.lastName }}</td>
+                <td>{{ ticket.details.buyer.email }}</td>
+                <td>{{ ticket.details.ticket.sessions[0].location.city }}</td>
+                <td>
+                    {% if ticket.details.ticket.cancellationReason %}
+                        {{ ticket.details.ticket.cancellationReason }}
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+                <td>{{ ticket.purchase_date_str }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

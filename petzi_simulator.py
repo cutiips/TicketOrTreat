@@ -131,7 +131,7 @@ if __name__ == "__main__":
             "ticket": {
                 "number": generate_random_string(),
                 "type": "online_presale",
-                "title": "Event Demo CAC",
+                "title": "Black Disco",
                 "category": random_category,
                 "eventId": 54694,
                 "event": "Event Demo",
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                         "location": {
                             "name": "Case à Chocs",
                             "street": "Quai Philipe Godet 20",
-                            "city": "Neuchatel",
+                            "city": "fr",
                             "postcode": "2000"
                         }
                     }
