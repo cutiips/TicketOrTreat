@@ -120,9 +120,33 @@ if __name__ == "__main__":
     ]
     random_cancellation_reason = random.choice(cancellation_reasons)
 
-    # Random postcode for buyer
-    postcodes = ["1000", "2000", "3000", "4000", "5000"]
-    random_postcode = random.choice(postcodes)
+    # Random city for buyer
+    cities = ["Lausanne", "Genève", "Neuchâtel", "Jura", "Fribourg"]
+    random_city = random.choice(cities)
+
+    city_postcodes = {
+        "Lausanne": "1000",
+        "Genève": "1200",
+        "Neuchâtel": "2000",
+        "Jura": "2800",
+        "Fribourg": "1700",
+    }
+
+    random_postcode = city_postcodes.get(random_city, "Unknown")
+
+    # Random event
+    event = ["TECH WITH US", "KPOP RYU", "VALENTINO VIVACE", "TOOLBOX NEUCHÂTEL", "THEODORA"]
+    random_event = random.choice(event)
+
+    # Random date with event
+    event_dates = {
+        "TECH WITH US": "2025-01-01",
+        "KPOP RYU": "2025-02-02",
+        "VALENTINO VIVACE": "2025-03-03",
+        "TOOLBOX NEUCHÂTEL": "2025-04-04",
+        "THEODORA": "2025-05-05",
+    }
+    random_date = event_dates.get(random_event, "Unknown")
 
     # JSON valide par défaut sous forme de dictionnaire
     data_dict = {
@@ -131,21 +155,21 @@ if __name__ == "__main__":
             "ticket": {
                 "number": generate_random_string(),
                 "type": "online_presale",
-                "title": "Black Disco",
+                "title": random_event,
                 "category": random_category,
-                "eventId": 54694,
-                "event": "Event Demo",
+                "eventId": 17,
+                "event": random_event,
                 "cancellationReason": random_cancellation_reason,
                 "sessions": [
                     {
-                        "name": "Event Demo CAC",
-                        "date": "2025-02-01",
+                        "name": random_event,
+                        "date": random_date,
                         "time": "21:00:00",
                         "doors": "21:00:00",
                         "location": {
                             "name": "Case à Chocs",
                             "street": "Quai Philipe Godet 20",
-                            "city": "fr",
+                            "city": random_city,
                             "postcode": "2000"
                         }
                     }
