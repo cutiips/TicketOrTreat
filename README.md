@@ -41,10 +41,17 @@ _(Remplacez `VOTRE_SECRET` par votre clé secrète, sans guillemets ni backticks
     ```bash
     python -m main
     ```
-2. Simuler un webhook Petzi :
+2. Simuler un webhook Petzi (1 entrée) :
     ```bash
     python petzi_simulator.py http://localhost:5000/webhook {YOUR_SECRET} 
     ```
+   
+3. Lancer le script (50 entrées par défaut) :
+    ```bash
+   python run_simulator.py
+    ```
+
+
 
 ---
 ## 💊 issues :
