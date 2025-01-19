@@ -34,7 +34,15 @@
             <canvas id="regionChart"></canvas>
         </div>
     </div>
-    <!-- Tu peux ajouter un 4e bloc ici si tu veux un autre graph -->
+    <!-- Nombre de place restantes-->
+    <div class="col-md-6 mb-4">
+      <div class="card p-3 h-100">
+        <h4 class="text-center">Places restantes</h4>
+        <p class="text-center">
+          <canvas id="capacityChart"></canvas>
+        </p>
+      </div>
+    </div>
 </div>
 
 <!-- Tableau (5 derniers billets par ex.) -->
@@ -91,6 +99,9 @@
     const salesData = {{ sales_data|tojson }};
     const ticketTypeData = {{ ticket_type_data|tojson }};
     const regionData = {{ region_data|tojson }};
+    const capacity = {{ capacity }};
+    let sold = {{ sold }};
+    let remaining = {{ remaining }};
 
     // 1) Ventes par jour
     const salesChart = new Chart(document.getElementById('salesChart').getContext('2d'), {
@@ -136,6 +147,19 @@
                 y: { beginAtZero: true }
             }
         }
+    });
+
+    // 4) Places restantes
+    const capacityChart = new Chart(document.getElementById("capacityChart").getContext("2d"), {
+        type: "doughnut",
+        data: {
+            labels: ["Vendus", "Restants"],
+            datasets: [{
+                data: [sold, remaining],
+                backgroundColor: ["#FF6384", "#36A2EB"]
+            }]
+        },
+        options: { responsive: true }
     });
 
     // Mise à jour temps réel (Socket.io)
@@ -189,6 +213,14 @@
                 regionChart.data.datasets[0].data.push(1);
             }
             regionChart.update();
+
+            // Màj capacityChart
+            sold += 1;
+            remaining = capacity - sold;
+            capacityChart.data.datasets[0].data = [sold, remaining];
+            capacityChart.update();
+
+
 
             // Toast
             const toastContainer = document.getElementById('toast-container');

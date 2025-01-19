@@ -150,6 +150,9 @@ def event_dashboard(event_title):
     """
     Page de détail d’un événement
     """
+    capacity = 750
+
+
     # Ventes par jour
     pipeline = [
         {"$match": {"details.ticket.title": event_title}},
@@ -174,6 +177,10 @@ def event_dashboard(event_title):
 
     # Récupération de tous les billets pour l'événement
     raw_tickets = list(collection.find({"details.ticket.title": event_title}, {"_id": 0}))
+
+    # Billets vendus et places restantes
+    sold = len(raw_tickets)
+    remaining = capacity - sold
 
     displayed_tickets = sorted(raw_tickets, key=lambda t: t['purchase_date'], reverse=True)[:5]
 
@@ -211,7 +218,10 @@ def event_dashboard(event_title):
         sales_data={"labels": labels, "values": values},
         ticket_type_data={"labels": ticket_type_labels, "values": ticket_type_values},
         total_event_revenue = total_event_revenue,
-        region_data = {"labels": region_labels, "values": region_values}
+        region_data = {"labels": region_labels, "values": region_values},
+        capacity=capacity,
+        sold=sold,
+        remaining=remaining
     )
 
 @app.route('/event/<event_title>/all', methods=['GET'])
