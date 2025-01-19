@@ -1,4 +1,3 @@
-// js/populate.js
 function formatDate(ticket) {
   if (!ticket.purchase_date || !ticket.purchase_date.$date) return "N/A";
   const d = new Date(ticket.purchase_date.$date);
@@ -263,7 +262,12 @@ function setupEventDashboard(data) {
     table.appendChild(tr);
   });
 
-  // 7) Graphiques
+  // 7) Capacité restante
+  const capacity = 750;
+  const sold = evTickets.length;
+  const remaining = capacity - sold;
+
+  // 8) Graphiques
   // a) Ventes par jour
   const salesByDay = {};
   evTickets.forEach((t) => {
@@ -335,6 +339,21 @@ function setupEventDashboard(data) {
       responsive: true,
       scales: { y: { beginAtZero: true } },
     },
+  });
+
+  // d) Capacité restante
+  new Chart(document.getElementById("capacityChart").getContext("2d"), {
+    type: "doughnut",
+    data: {
+      labels: ["Vendus", "Restants"],
+      datasets: [
+        {
+          data: [sold, remaining],
+          backgroundColor: ["#FF6384", "#36A2EB"],
+        },
+      ],
+    },
+    options: { responsive: true },
   });
 }
 
